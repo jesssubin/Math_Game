@@ -4,4 +4,4 @@ require './turns.rb'
 
 new_game = Turns.new 
 
-puts new_game
+new_game.set_turn 
