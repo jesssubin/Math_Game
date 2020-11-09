@@ -10,4 +10,5 @@ question
 
 game_turn 
  - new turn or game over msg depending on lives of players
+ - score counter
  - swapping turns (current_player)
