@@ -6,10 +6,6 @@ class Player
     @lives = lives
   end 
 
-  def lives_count 
-    puts "#{lives}/3 "
-  end 
-
   def lose_life 
     @lives -= 1 
   end 

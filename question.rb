@@ -1,10 +1,9 @@
 class Question 
   attr_accessor :ask_question
 
-  def initialize(player)
+  def initialize
     @num1 = rand(1...20)
     @num2 = rand(1...20)
-    @player = player
   end
 
   def ask_question 
@@ -12,11 +11,13 @@ class Question
     puts "> "
     
     player_answer = gets.chomp.to_i
-    if player_answer == answer
+
+    if player_answer == @num1 + @num2
       puts "YES! You are correct."
+      return true 
     else
       puts "Seriously? No!"
-      @player.lose_life
+      return false 
     end
   end 
 
