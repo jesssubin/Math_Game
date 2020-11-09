@@ -7,7 +7,7 @@ class Player
   end 
 
   def lives_count 
-    puts "#{lives} /3 "
+    puts "#{lives}/3 "
   end 
 
   def lose_life 
@@ -17,6 +17,7 @@ class Player
 end 
 
 #example 
-jess = Player.new("Jess", 3)
-jess.lose_life
-p jess
+# jess = Player.new("Jess", 3)
+# jess.lives_count
+# jess.lose_life
+# p jess
